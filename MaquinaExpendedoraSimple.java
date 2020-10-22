@@ -23,7 +23,13 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "LEON";
         estacionDestino = "MURCIA";
     }
-
+    public MaquinaExpendedoraSimple(int precioDelBillete, String origen, String destino) {
+        precioBillete = precioDelBillete;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = origen;
+        estacionDestino = destino;
+    }
     /**
      * Devuelve el precio del billete
      */
