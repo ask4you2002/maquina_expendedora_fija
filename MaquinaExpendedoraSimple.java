@@ -10,7 +10,7 @@ public class MaquinaExpendedoraSimple {
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
-    
+    // Cantidad descontada
     private String precioDescontado;
 
     /**
@@ -61,6 +61,10 @@ public class MaquinaExpendedoraSimple {
     public void reducirPrecioBillete(int precioDescontado) {
         precioBillete = precioBillete - precioDescontado;
         System.out.println("DESCONTADO:" +precioDescontado+ "€");
+    }
+    public void vaciarDepositoDinero() {
+        totalDineroAcumulado = 0;
+        
     }
     /**
      * Imprime un billete para el cliente actual
